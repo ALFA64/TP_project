@@ -1,0 +1,19 @@
+def suma_pozitive(lista):
+    
+    # Functia primeste o lista de numere si returneaza suma numerelor pozitive din lista, \
+        # media aritmetica a numerelor pozitive , numarul de elemente pozitive din lista si o lista noua cu numerele pozitive.
+    lista_pozitiva = []
+    suma = k = 0
+    for numar in lista:
+        if numar > 0:
+            suma += numar
+            k += 1
+            lista_pozitiva.append(numar)
+    return suma, suma/k, lista_pozitiva
+
+lista_numere = [-10, 5, -3, 2, 8, -1]
+print("Lista de numere >>> " + str(lista_numere))
+suma, media, lista_pozitiva = suma_pozitive(lista_numere)
+print("Suma cu numerelor pozitive din lista >>> ",suma)
+print("Media aritmetica a numerelor pozitive din lista >>> ",media)
+print("Lista cu numerele pozitive din lista >>> " + str(lista_pozitiva))
